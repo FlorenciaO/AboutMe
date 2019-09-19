@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">About Me</string>
     <string name="name">Florencia Olivera</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="bio">I love music.
+        \nI like singing in the shower and dancing when I\’m alone in my home.
+        \n\nI have a very pretty puppy, his name is Torito.
+        \nI like to play with him but sometimes he gets me crazy.
+        \n\nAlso, I have 2 adorable nephews, 3 and 10 years old respectively.
+        \nWhen I have free time, I go at their house and I spend time with them or we go out to some square to play the ball.
+        \n\nI don\'t want to forget to mention what important is my family for me, they are my pillar.
+        \nWithout them I would be the same, they taught me to work hard to achieve my goals. And it\'s what I\'m doing.\n\n</string>
 </resources>
