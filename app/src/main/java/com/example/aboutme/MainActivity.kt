@@ -11,6 +11,7 @@ import com.example.aboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
+    private val myName : MyName = MyName("Florencia Olivera")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         // It's to bind data between layout and main activity
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        binding.myName = myName
         binding.doneButton.setOnClickListener{
             addNickname(it)
         }
@@ -27,12 +29,12 @@ class MainActivity : AppCompatActivity() {
     private fun addNickname(view : View) {
 
         binding.apply {
-            binding.nicknameText.text = binding.nicknameEdit.text
+            myName?.nickname = nicknameEdit.text.toString()
 
             invalidateAll() // to can refresh properties
-            binding.nicknameEdit.visibility = View.GONE
-            binding.doneButton.visibility = View.GONE
-            binding.nicknameText.visibility = View.VISIBLE
+            nicknameEdit.visibility = View.GONE
+            doneButton.visibility = View.GONE
+            nicknameText.visibility = View.VISIBLE
         }
 
         // hide the keyboard
