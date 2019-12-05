@@ -52,10 +52,11 @@
             android:text="@string/done" />
 
         <TextView
-            style="@style/nameStyle"
             android:id="@+id/nickname_text"
-            android:layout_height="wrap_content"
+            style="@style/nameStyle"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
             android:text="@{myName.nickname}"
             android:textAlignment="center"
             android:visibility="gone" />
