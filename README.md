@@ -5,4 +5,4 @@
 * Connect views with data through data binding
 ## Screenshots:
 ![](screenshots/nickname.png)
-![](screenshots/nicknameinpu.png)
+![](screenshots/nicknameinput.png)
