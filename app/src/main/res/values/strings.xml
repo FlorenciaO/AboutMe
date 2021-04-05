@@ -1,14 +1,12 @@
 <resources>
     <string name="app_name">About Me</string>
     <string name="yellow_star">Yellow star</string>
-    <string name="bio">I love music.
-        \nI like singing in the shower and dancing when I\’m alone in my home.
-        \n\nI have a very pretty puppy, his name is Torito.
-        \nI like to play with him but sometimes he gets me crazy.
-        \n\nAlso, I have 2 adorable nephews, 3 and 10 years old respectively.
-        \nWhen I have free time, I go at their house and I spend time with them or we go out to some square to play the ball.
-        \n\nI don\'t want to forget to mention what important is my family for me, they are my pillar.
-        \nWithout them I would be the same, they taught me to work hard to achieve my goals. And it\'s what I\'m doing.\n\n</string>
+    <string name="bio">My name is Florencia and I\'m 22 years old. I\'m finishing the Computer Engineering program.\n\n
+        When I was 19, I started to work as intern at Core Security (now it\'s Secureauth). Since then I haven\'t stopped learning and improving in the computer field.
+        \n\nOutside of work, I like watching series and movies on Netflix and Disney +. Sometimes, I go out with my friends to have fun, we like playing board games.\n
+        Also, when I have free time, I spend time on taking courses to learn new technologies. I strongly recommend websites such as Udemy, Codecademy and Udacity.\n\n
+        I\'m a big fan of travelling. My boyfriend and I have visited many places in our country - Argentina -, but we\'d like to dive into the whole world.
+    </string>
     <string name="what_is_your_nickname">What is your nickname?</string>
     <string name="done">Done</string>
 </resources>

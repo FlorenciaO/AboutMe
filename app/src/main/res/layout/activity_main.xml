@@ -61,18 +61,15 @@
             android:textAlignment="center"
             android:visibility="gone" />
 
-        <ScrollView
-            android:id="@+id/bio_scroll"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/bio_text"
+            style="@style/nameStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/small_padding"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/bio"
+            android:scrollbars="vertical"/>
 
-            <TextView
-                style="@style/nameStyle"
-                android:id="@+id/bio_text"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                android:lineSpacingMultiplier="1.2"
-                android:text="@string/bio" />
-        </ScrollView>
     </LinearLayout>
 </layout>

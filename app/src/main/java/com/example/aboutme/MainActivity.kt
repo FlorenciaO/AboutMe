@@ -3,8 +3,10 @@ package com.example.aboutme
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import com.example.aboutme.databinding.ActivityMainBinding
 
@@ -12,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
     private val myName : MyName = MyName("Florencia Olivera")
+    private lateinit var aboutMeText : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         binding.doneButton.setOnClickListener{
             addNickname(it)
         }
+
+        binding.bioText.movementMethod = ScrollingMovementMethod()
 
     }
 
