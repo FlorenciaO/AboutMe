@@ -39,7 +39,8 @@
             android:inputType="textPersonName"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:autofillHints="username"/>
 
         <Button
             style="@style/Widget.AppCompat.Button.Colored"
