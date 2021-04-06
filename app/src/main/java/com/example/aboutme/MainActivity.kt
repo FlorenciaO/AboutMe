@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
     private val myName : MyName = MyName("Florencia Olivera")
-    private lateinit var aboutMeText : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
