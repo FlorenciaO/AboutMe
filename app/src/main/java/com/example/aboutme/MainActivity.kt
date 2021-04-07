@@ -13,7 +13,7 @@ import com.example.aboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
-    private val myName : MyName = MyName("Florencia Olivera")
+    private var myNameData : MyName = MyName("Florencia Olivera")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,21 +21,21 @@ class MainActivity : AppCompatActivity() {
         // It's to bind data between layout and main activity
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.myName = myName
-        binding.doneButton.setOnClickListener{
-            addNickname(it)
+        binding.apply {
+            myName = myNameData  // binding data - my name data class
+            doneButton.setOnClickListener {
+                addNickname(it)
+            }
+            bioText.movementMethod = ScrollingMovementMethod()
         }
-
-        binding.bioText.movementMethod = ScrollingMovementMethod()
 
     }
 
     private fun addNickname(view : View) {
 
         binding.apply {
-            myName?.nickname = nicknameEdit.text.toString()
-
-            invalidateAll() // to can refresh properties
+            myName?.nickname = nicknameEdit.text.toString() // binding data - nickname
+            invalidateAll() // to refresh properties
             nicknameEdit.visibility = View.GONE
             doneButton.visibility = View.GONE
             nicknameText.visibility = View.VISIBLE
